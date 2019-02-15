@@ -7,21 +7,15 @@ function myFunction() {
 
     if (toggled == false) {
         menuBtn.classList.toggle('menu-btn_active');
-        menu.classList.toggle('menu_hiding');
-        setTimeout(()=>{
+        setTimeout(() => {
             menu.classList.toggle('menu_hidden')
-    }, 300);
+        }, 200);
 
         toggled = true;
-
 
     } else {
         menuBtn.classList.toggle('menu-btn_active');
         menu.classList.toggle('menu_hiding');
-        setTimeout(()=>{
-                menu.classList.toggle('menu_hidden')
-        }, 500);
-        toggled = false;
     }
 }
 

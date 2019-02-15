@@ -134,8 +134,8 @@
         -ms-flex-align: center;
             align-items: center;
     opacity: 1;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
   }
   .body-wrapper .menu .container {
     display: -webkit-box;
