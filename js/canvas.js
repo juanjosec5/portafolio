@@ -90,7 +90,9 @@ function Square(x, y, s, xSpeed, ySpeed) {
         //Interactivity
 
         if (mouse.x - this.x < 80 && mouse.x - this.x > -80 && mouse.y - 80 - this.y < 80 && mouse.y - 80 - this.y > -80) {
+            c.rotate(20 * Math.PI * 2);
             if (this.s < maxSize) {
+
                 this.s += 5;
             }
         } else if (this.s > minSize) {
@@ -109,6 +111,11 @@ for (let i = 0; i < 300; i++) {
     let xSpeed = getRandomInt(-2, 2);
     let ySpeed = getRandomInt(-2, 2);
     let s = getRandomInt(minSize, 30);
+
+    if (xSpeed == 0 || ySpeed == 0) {
+        xSpeed += 1;
+        ySpeed += 1;
+    }
 
     squaresArray.push(new Square(x, y, s, xSpeed, ySpeed));
 }
