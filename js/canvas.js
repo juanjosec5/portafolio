@@ -1,7 +1,13 @@
 let canvas = document.querySelector('canvas');
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight - 120;
+canvas.height = window.innerHeight;
+
+window.addEventListener('resize', function (event) {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
 
 let c = canvas.getContext('2d');
 
@@ -89,10 +95,9 @@ function Square(x, y, s, xSpeed, ySpeed) {
 
         //Interactivity
 
-        if (mouse.x - this.x < 80 && mouse.x - this.x > -80 && mouse.y - 80 - this.y < 80 && mouse.y - 80 - this.y > -80) {
-            c.rotate(20 * Math.PI * 2);
-            if (this.s < maxSize) {
+        if (mouse.x - this.x < 100 && mouse.x - this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100) {
 
+            if (this.s < maxSize) {
                 this.s += 5;
             }
         } else if (this.s > minSize) {
@@ -126,7 +131,7 @@ function animate() {
     requestAnimationFrame(animate)
     c.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-    // c.fillRect(mouse.x - 25, mouse.y - 130, 50, 50);
+    // c.fillRect(mouse.x - 25, mouse.y, 50, 50);
 
     for (let i = 0; i < squaresArray.length; i++) {
 
