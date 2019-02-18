@@ -50,7 +50,7 @@ window.addEventListener('mousemove', function (e) {
     mouse.y = e.y;
 });
 
-const maxSize = 60;
+const maxSize = 80;
 const minSize = 10;
 
 let colorArray = [
@@ -89,7 +89,7 @@ function Square(x, y, s, xSpeed, ySpeed) {
 
         //Interactivity
 
-        if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - 120 - this.y < 50 && mouse.y - 120 - this.y > -50) {
+        if (mouse.x - this.x < 80 && mouse.x - this.x > -80 && mouse.y - 80 - this.y < 80 && mouse.y - 80 - this.y > -80) {
             if (this.s < maxSize) {
                 this.s += 5;
             }
@@ -102,12 +102,12 @@ function Square(x, y, s, xSpeed, ySpeed) {
 }
 
 let squaresArray = [];
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < 300; i++) {
 
     let x = Math.floor(Math.random() * window.innerWidth) + 50;
     let y = Math.floor(Math.random() * window.innerHeight - 150);
-    let xSpeed = Math.floor(Math.random() * 5 + 1);
-    let ySpeed = Math.floor(Math.random() * 5 + 1);
+    let xSpeed = getRandomInt(-2, 2);
+    let ySpeed = getRandomInt(-2, 2);
     let s = getRandomInt(minSize, 30);
 
     squaresArray.push(new Square(x, y, s, xSpeed, ySpeed));
@@ -119,7 +119,7 @@ function animate() {
     requestAnimationFrame(animate)
     c.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-    c.fillRect(mouse.x - 25, mouse.y - 130, 50, 50);
+    // c.fillRect(mouse.x - 25, mouse.y - 130, 50, 50);
 
     for (let i = 0; i < squaresArray.length; i++) {
 
