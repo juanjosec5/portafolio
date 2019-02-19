@@ -193,6 +193,7 @@ p{
         }
       }
     }
+
     .about{
       width: 100vw;
       // background: red;
@@ -235,7 +236,7 @@ p{
           }
         }
 
-        .skills{
+        .side-info{
           flex: 0 1 40%;
           
           .img-container{
@@ -261,6 +262,16 @@ p{
             }
           }       
         }
+      }
+    }
+
+    .skills{
+      width: 100%;
+      background: #d9d9d9;
+
+      .skills-container{
+        width: 90%;
+        margin: 0 auto;
       }
     }
   
