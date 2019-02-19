@@ -6,11 +6,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+p{
+  line-height: 20px;
+}
+
 @keyframes mainArrow{
   
   0%{
     transform: scale(1);
-    
+
   }
 
   50%{
@@ -27,14 +35,14 @@
     }
 
     header{
-      background: #fff;
+      // background: #fff;
       position: fixed;
       top: 1;
       z-index: 0;
       width: 100%;
       // background: red;
       transition: 200ms;
-      box-shadow: 3px 3px 5px #ddd;
+      // box-shadow: 3px 3px 5px #ddd;
 
       .header-wrapper{
         height: 100%;
@@ -136,6 +144,7 @@
         box-sizing: border-box;
         padding: 0;
         background: white;
+        box-shadow: 3px 3px 5px #ddd;
       }
 
       .cta{
@@ -177,8 +186,79 @@
         a{
           i{
             color: black;
+          }
+          i:hover{
             animation: mainArrow 3s infinite;
           }
+        }
+      }
+    }
+    .about{
+      width: 100vw;
+      // background: red;
+      box-sizing: border-box;
+      padding: 1em; 
+
+      .about-container{
+        width: 90%;
+        // background: green;
+        box-sizing: border-box;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .info{
+          order: 0;
+          flex: 0 1 40%;
+
+          h2{
+            font-size: 3em;
+            margin: 1em 0;
+    
+          }
+
+          .main-intro{
+            line-height: 30px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+          }
+
+          .resumen{
+            box-sizing: border-box;
+            padding: 0 1em;
+          }
+
+          p{
+            box-sizing: border-box;
+          }
+        }
+
+        .skills{
+          order: 1;
+          flex: 0 1 40%;
+          
+          .img-container{
+            width: 100%;
+            margin: 3em 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img{
+              width: 80%;
+              border-radius: 50%;
+            }
+
+            h3{
+              text-align: center;
+              font-size: 1.5em;
+              margin-top: 10px;
+
+            }
+          }       
         }
       }
     }

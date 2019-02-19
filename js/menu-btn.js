@@ -1,5 +1,6 @@
 let menuToggler = document.querySelector('.hamburger');
 let menu = document.querySelector('.menu');
+let navItems = document.querySelectorAll('.nav-item');
 
 menuToggler.addEventListener('click', toggleMenu);
 
