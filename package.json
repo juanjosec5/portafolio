@@ -1,0 +1,33 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "portfolio dmi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanjosec5/portafolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "juan jose cuadros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanjosec5/portafolio/issues"
+  },
+  "homepage": "https://github.com/juanjosec5/portafolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
