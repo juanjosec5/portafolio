@@ -8,3 +8,4 @@ function toggleMenu() {
     menuToggler.classList.toggle('is-active');
     menu.classList.toggle('menu-active');
 }
+
