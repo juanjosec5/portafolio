@@ -81,9 +81,9 @@ h3{
       .menu{
         position: absolute;
         top: 0;
-        right: -50vw;
+        right: -30vw;
         z-index: 100;
-        width: 50vw;
+        width: 30vw;
         height: 100vh;
         background: #f9f9f9;
         transition: transform 200ms ease-in-out;
@@ -120,11 +120,15 @@ h3{
         }
         .social-media{
           display: flex;
+          justify-content: space-between;
+          max-width: 300px;
 
           .icon{
-            padding: 20px;
-            margin: 0 10px;
-            transition: 300ms
+            padding: 10px;
+            transition: 300ms;
+            a{
+              color: black;
+            }
           }
 
           .icon:hover{
@@ -140,7 +144,7 @@ h3{
       }
 
       .menu-active{
-        transform: translate(-50vw);
+        transform: translate(-30vw);
       }
     }
 
