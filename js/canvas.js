@@ -11,33 +11,6 @@ window.addEventListener('resize', function (event) {
 
 let c = canvas.getContext('2d');
 
-// c.fillStyle = 'rgba(255, 255, 0, 0.5)';
-// c.fillRect(100, 100, 50, 50);
-
-// line
-// c.beginPath();
-// c.moveTo(300, 400);
-// c.lineTo(350, 470);
-// c.lineTo(230, 870);
-// c.strokeStyle = "blue";
-// c.stroke();
-
-// arc
-// c.beginPath();
-// c.arc(300, 300, 30, 0, Math.PI * 2, false);
-// c.stroke();
-
-// for (let i = 0; i < 100; i++) {
-//     let x = Math.random() * window.innerWidth;
-//     let y = Math.random() * window.innerHeight;
-
-//     c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
-//     c.fillRect(x, y, 50, 50);
-
-//     Math.floor(Math.random() * 255);
-// }
-
-
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -56,7 +29,7 @@ window.addEventListener('mousemove', function (e) {
     mouse.y = e.y;
 });
 
-const maxSize = 80;
+const maxSize = 50;
 const minSize = 10;
 
 let colorArray = [
@@ -113,8 +86,8 @@ for (let i = 0; i < 300; i++) {
 
     let x = Math.floor(Math.random() * window.innerWidth) + 50;
     let y = Math.floor(Math.random() * window.innerHeight - 150);
-    let xSpeed = getRandomInt(-2, 2);
-    let ySpeed = getRandomInt(-2, 2);
+    let xSpeed = getRandomInt(-1, 1);
+    let ySpeed = getRandomInt(-1, 1);
     let s = getRandomInt(minSize, 30);
 
     if (xSpeed == 0 || ySpeed == 0) {
