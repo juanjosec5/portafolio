@@ -34,7 +34,6 @@ const minSize = 10;
 
 let colorArray = [
     '#D7263D',
-    '#090C9B',
     '#f1f1f1',
     '#FFA400',
 ]
