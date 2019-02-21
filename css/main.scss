@@ -14,6 +14,15 @@ p{
   line-height: 20px;
 }
 
+h2{
+  font-size: 3em;
+  margin: 1em 0;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
 @keyframes mainArrow{
   
   0%{
@@ -182,7 +191,7 @@ p{
         position: absolute;
         left: 50%;
         top: 80%;
-        z-index: -10;
+        z-index: 1;
     
         a{
           i{
@@ -196,6 +205,7 @@ p{
     }
 
     .about{
+      margin-top: 45px;
       width: 100vw;
       // background: red;
       box-sizing: border-box;
@@ -208,7 +218,7 @@ p{
         margin: 0 auto;
         padding-bottom: 2em;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
 
         .info{
@@ -217,7 +227,6 @@ p{
           h2{
             font-size: 3em;
             margin: 1em 0;
-    
           }
 
           .main-intro{
@@ -242,7 +251,7 @@ p{
 
           .tools{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
             .tool{
               width: 50px;
@@ -266,7 +275,7 @@ p{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
+
             img{
               width: 80%;
               border-radius: 50%;
@@ -286,10 +295,53 @@ p{
     .skills{
       width: 100%;
       background: #d9d9d9;
+      margin-top: 45px;
+      padding: 1em;
 
       .skills-container{
         width: 90%;
         margin: 0 auto;
+        // background: red;
+
+        .skills-wrapper{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .design{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .design-item{
+              margin: 1em 0;
+            }
+          }
+
+          .coding{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .coding-item{
+              margin: 1em 0;
+            }
+          }
+        }
       }
     }
+
+    .projects{
+        width: 100%;
+        background: white;
+        margin-top: 45px;
+        padding: 1em;
+  
+        .projects-container{
+          width: 90%;
+          margin: 0 auto;
+          background: red;
+    }
+  }
   
