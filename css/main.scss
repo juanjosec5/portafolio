@@ -656,6 +656,7 @@ a:hover, a:active{
             img{
               width: 80%;
               border-radius: 50%;
+              border: 1px solid white;
             }
   
             h3{
@@ -726,7 +727,7 @@ a:hover, a:active{
   .projects{
     box-sizing: border-box;
     width: 100%;
-    background: white;
+    // background: white;
     margin-top: 45px;
     padding: 1em;
 

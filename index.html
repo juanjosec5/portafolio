@@ -8,10 +8,16 @@
     <title>Portafolio</title>
     <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
 
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- animate on scroll link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- <link rel="stylesheet" href="./css/hover.css"> -->
     <link rel="stylesheet" href="./css/hamburger.css">
@@ -102,23 +108,23 @@
                         <h3>My basic every-day tools</h3>
 
                         <div class="tools">
-                            <div class="tool">
-                                <img src="./img/tools/illustrator.svg" alt="Adobe illustrator">
+                            <div class="tool" data-aos="flip-down" data-aos-delay="200">
+                                <img src="./img/tools/illustrator-white.svg" alt="Adobe illustrator">
                             </div>
-                            <div class="tool">
-                                <img src="./img/tools/photoshop.svg" alt="Adobe Photoshop">
+                            <div class="tool" data-aos="flip-down" data-aos-delay="400">
+                                <img src="./img/tools/photoshop-white.svg" alt="Adobe Photoshop">
                             </div>
-                            <div class="tool">
-                                <img src="./img/tools/xd.svg" alt="Adobe XD">
+                            <div class="tool" data-aos="flip-down" data-aos-delay="600">
+                                <img src="./img/tools/xd-white.svg" alt="Adobe XD">
                             </div>
-                            <div class="tool">
-                                <img src="./img/tools/visual-code.svg" alt="visual studio code">
+                            <div class="tool" data-aos="flip-down" data-aos-delay="800">
+                                <img src="./img/tools/visual-code-white.svg" alt="visual studio code">
                             </div>
                         </div>
 
                 </div>
                 <div class="side-info">
-                    <div class="img-container">
+                    <div class="img-container" data-aos="zoom-in">
                         <img src="./img/about/portrait.jpg" alt="">
                         <h3>Juan José Cuadros</h3>
                     </div>
@@ -133,66 +139,66 @@
             <h2>Skills</h2>
             <div class="skills-wrapper">
                 <div class="design">
-                    <h3 class="design-title">Design</h3>
-                    <div class="design-item">
+                    <h3 class="design-title" data-aos="fade-right">Design</h3>
+                    <div class="design-item" data-aos="fade-right" data-aos-delay="100">
                         <p>
                             Image Editing
                         </p>
                     </div>
-                    <div class="design-item">
+                    <div class="design-item" data-aos="fade-right" data-aos-delay="200">
                         <p>
                             Wireframes
                         </p>
                     </div>
-                    <div class="design-item">
+                    <div class="design-item" data-aos="fade-right" data-aos-delay="300">
                         <p>
                             Prototyping
                         </p>
                     </div>
-                    <div class="design-item">
+                    <div class="design-item" data-aos="fade-right" data-aos-delay="400">
                         <p>
                             UI Design
                         </p>
                     </div>
-                    <div class="design-item">
+                    <div class="design-item" data-aos="fade-right" data-aos-delay="500">
                         <p>
                             UX Testing
                         </p>
                     </div>
-                    <div class="design-item">
+                    <div class="design-item" data-aos="fade-right" data-aos-delay="600">
                         <p>
                             User Research
                         </p>
                     </div>
                 </div>
                 <div class="coding">
-                    <h3 class="coding-title">Coding</h3>
-                    <div class="coding-item">
+                    <h3 class="coding-title" data-aos="fade-left">Coding</h3>
+                    <div class="coding-item" data-aos="fade-left" data-aos-delay="150">
                         <p>
                             HTML5
                         </p>
                     </div>
-                    <div class="coding-item">
+                    <div class="coding-item" data-aos="fade-left" data-aos-delay="250">
                         <p>
                             CSS3
                         </p>
                     </div>
-                    <div class="coding-item">
+                    <div class="coding-item" data-aos="fade-left" data-aos-delay="350">
                         <p>
                             Javascript
                         </p>
                     </div>
-                    <div class="coding-item">
+                    <div class="coding-item" data-aos="fade-left" data-aos-delay="450">
                         <p>
                             React.js
                         </p>
                     </div>
-                    <div class="coding-item">
+                    <div class="coding-item" data-aos="fade-left" data-aos-delay="550">
                         <p>
                             Node
                         </p>
                     </div>
-                    <div class="coding-item">
+                    <div class="coding-item" data-aos="fade-left" data-aos-delay="650">
                         <p>
                             Git
                         </p>
@@ -220,6 +226,14 @@
         </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./js/animated.js"></script>
     <script src="./js/canvas.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/menu-btn.js"></script>
