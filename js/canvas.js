@@ -33,11 +33,11 @@ const maxSize = 50;
 const minSize = 10;
 
 let colorArray = [
-    '#ffaaee',
-    '#99ffaa',
+    '#D7263D',
+    '#090C9B',
     '#f1f1f1',
     '#181818',
-    '#bad455',
+    '#181818',
 ]
 
 

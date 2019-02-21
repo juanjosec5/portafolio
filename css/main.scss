@@ -10,17 +10,28 @@ html{
   scroll-behavior: smooth;
 }
 
+p, h1, h2, h3, h4, h5, h6, a{
+  color: white;
+}
+
 p{
   line-height: 20px;
 }
 
 h2{
+  padding-top: 45px;
   font-size: 3em;
-  margin: 1em 0;
+  // font-weight: 300;
+  margin: 45px 0;
 }
 
 h3{
   font-size: 1.5em;
+}
+
+
+a:hover, a:active{
+  color: #D7263D;
 }
 
 @keyframes mainArrow{
@@ -41,6 +52,8 @@ h3{
 
     body{
       overflow-x: hidden;
+      background-color: #181818;
+
     }
 
     header{
@@ -105,18 +118,6 @@ h3{
             text-transform: uppercase;
             font-size: 1.3em;
           }
-
-          .hvr-glow {
-            display: inline-block;
-            vertical-align: middle;
-            transform: perspective(1px) translateZ(0);
-            text-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            transition-duration: 0.3s;
-            transition-property: text-shadow;
-          }
-          .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-          }
         }
         .social-media{
           display: flex;
@@ -156,8 +157,8 @@ h3{
         z-index: -10;
         box-sizing: border-box;
         padding: 0;
-        background: white;
-        box-shadow: 3px 3px 5px #ddd;
+        // background: #f9f9f9;
+        // border-bottom: 5px solid #D7263D;
       }
 
       .cta{
@@ -175,7 +176,7 @@ h3{
         .message{
           position: absolute;
           top: 200px;
-          background: rgba(0, 0, 0, 0.05);
+          background: rgba(255, 255, 255, 0.05);
           border-radius: 10px;
           box-sizing: border-box;
           padding: 1em;
@@ -199,7 +200,7 @@ h3{
     
         a{
           i{
-            color: black;
+            color: #fff;
           }
           i:hover{
             animation: mainArrow 3s infinite;
@@ -209,11 +210,12 @@ h3{
     }
 
     .about{
-      margin-top: 45px;
+      box-sizing: border-box;
+      // margin-top: 45px;
       width: 100vw;
       // background: red;
-      box-sizing: border-box;
       padding: 1em; 
+      // background: #f9f9f9;
 
       .about-container{
         width: 90%;
@@ -227,9 +229,24 @@ h3{
         align-items: flex-start;
         
         h2{
-          width: 100%;
-          text-align: center;
+          padding-top: 45px;
+          text-align: left;
+          // color: #083D77;
+          
+          // text-shadow: #083D77 -1px 1px,
+          // #083D77 -2px 2px,
+          // #083D77 -3px 3px,
+          // #083D77 -4px 4px,
+          // #083D77 -5px 5px;
+
+          // text-shadow: #083D77 -1px 1px,
+          // #083D77 -2px 2px,
+          // #083D77 -3px 3px,
+          // #083D77 -4px 4px,
+          // #083D77 -5px 5px;
+     
         }
+      
   
         .about-wrapper{
   
@@ -243,6 +260,7 @@ h3{
             h2{
               font-size: 3em;
               margin: 1em 0;
+              
             }
     
             .main-intro{
@@ -285,8 +303,11 @@ h3{
   
             flex: 0 1 40%;
             order: 2;
+            // background: #090C9B;
             
             .img-container{
+              box-sizing: border-box;
+              padding: 2em;
               z-index: -10;
               width: 100%;
               margin: 3em 0;
@@ -294,11 +315,14 @@ h3{
               flex-direction: column;
               justify-content: center;
               align-items: center;
-    
-              img{
-                width: 80%;
-                border-radius: 50%;
-              }
+              
+                img{
+                  width: 80%;
+                  border-radius: 50%;
+                  border: 5px solid #f9f9f9;
+                }
+              
+          
     
               h3{
                 text-align: center;
@@ -315,7 +339,7 @@ h3{
 
     .skills{
       width: 100%;
-      margin-top: 45px;
+      // margin-top: 45px;
       padding: 1em;
 
       .skills-container{
@@ -324,6 +348,7 @@ h3{
         // background: red;
 
         h2{
+          padding-top: 45px;
           text-align: center;
         }
 
@@ -358,14 +383,18 @@ h3{
 
     .projects{
         width: 100%;
-        background: white;
-        margin-top: 45px;
+        // background: white;
+        // margin-top: 45px;
         padding: 1em;
   
         .projects-container{
           width: 90%;
           margin: 0 auto;
           // background: red;
+
+          h2{
+            padding-top: 45px;
+          }
 
           .projects-wrapper{
             display: flex;
@@ -479,7 +508,7 @@ h3{
       z-index: -10;
       box-sizing: border-box;
       padding: 0;
-      background: white;
+      // background: white;
       box-shadow: 3px 3px 5px #ddd;
     }
 
@@ -532,7 +561,7 @@ h3{
   }
 
   .about{ 
-    margin-top: 45px;
+    // margin-top: 45px;
     width: 100vw;
     // background: red;
     box-sizing: border-box;
@@ -549,6 +578,10 @@ h3{
       justify-content: space-between;
       align-items: flex-start;
       
+      h2{
+        width: 100%;
+        text-align: center;
+      }
 
       .about-wrapper{
 
