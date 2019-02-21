@@ -29,6 +29,11 @@ h3{
   font-size: 1.5em;
 }
 
+body{
+  overflow-x: hidden;
+  background-color: #181818;
+
+}
 
 a:hover, a:active{
   color: #D7263D;
@@ -50,11 +55,7 @@ a:hover, a:active{
   }
 }
 
-    body{
-      overflow-x: hidden;
-      background-color: #181818;
 
-    }
 
     header{
       // background: #fff;
@@ -287,6 +288,8 @@ a:hover, a:active{
             .tools{
               display: flex;
               justify-content: space-between;
+              position: relative;
+              z-index: -10;
     
               .tool{
                 width: 50px;
@@ -315,6 +318,8 @@ a:hover, a:active{
               flex-direction: column;
               justify-content: center;
               align-items: center;
+              position: relative;
+              z-index: -10;
               
                 img{
                   width: 80%;
