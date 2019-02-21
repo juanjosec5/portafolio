@@ -235,6 +235,24 @@ p{
           p{
             box-sizing: border-box;
           }
+
+          h3{
+            margin: 2em 0;
+          }
+
+          .tools{
+            display: flex;
+            justify-content: space-evenly;
+
+            .tool{
+              width: 50px;
+
+              .img{
+                width: 100%;
+              }
+
+            }
+          }
         }
 
         .side-info{
@@ -248,9 +266,7 @@ p{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative;
-            top: 100px;
-
+            
             img{
               width: 80%;
               border-radius: 50%;
