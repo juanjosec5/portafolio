@@ -131,7 +131,7 @@ body{
           }
 
           .icon:hover{
-            background: red;
+            background: #888888;
             border-radius: 50%;
 
             i{
@@ -345,7 +345,7 @@ body{
       // margin-top: 45px;
       padding: 1em;
       background-color: #202020;
-      padding-bottom: 45px;
+      padding-bottom: 90px;
 
       .skills-container{
         width: 90%;
@@ -438,6 +438,23 @@ body{
               transform: scale(1.1);
               background: rgba(100, 100, 100, 0.5);
             }
+
+            // .project:nth-child(1n){
+            //   background: url('../img/projects/elite-sport-proyect.PNG') center center no-repeat;
+            //   background-size: cover;
+            // }
+            // .project:nth-child(2n){
+            //   background: url('../img/projects/henn-auto-proyect.PNG') center center no-repeat;
+            //   background-size: cover;
+            // }
+            // .project:nth-child(3n){
+            //   background: url('../img/projects/hotel-friends-to-be.png') center center no-repeat;
+            //   background-size: cover;
+            // }
+            // .project:nth-child(4n){
+            //   background: url('../img/projects/provincia-mayor-proyect.PNG') center center no-repeat;
+            //   background-size: cover;
+            // }
           }
       }
     }
@@ -519,7 +536,7 @@ body{
         }
 
         .icon:hover{
-          background: red;
+          background: #888888;
           border-radius: 50%;
 
           i{
