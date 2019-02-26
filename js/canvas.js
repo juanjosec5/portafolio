@@ -33,9 +33,9 @@ const maxSize = 50;
 const minSize = 10;
 
 let colorArray = [
-    '#D7263D',
-    '#f1f1f1',
-    '#FFA400',
+    'rgba(215, 38, 61, 0.3',
+    'rgba(241, 241, 241, 0.3)',
+    'rgba(255, 164, 0, 0.3)',
 ]
 
 

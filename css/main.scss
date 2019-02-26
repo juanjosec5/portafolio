@@ -562,7 +562,6 @@ body{
       box-sizing: border-box;
       padding: 0;
       // background: white;
-      box-shadow: 3px 3px 5px #ddd;
     }
 
     .cta{
@@ -579,7 +578,7 @@ body{
 
       .message{
         top: 100px;
-        background: rgba(255,255,255,.1);
+        background: rgba(0,0,0,.9);
         border-radius: 10px;
         box-sizing: border-box;
         padding: 50px;
