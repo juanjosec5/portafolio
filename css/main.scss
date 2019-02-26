@@ -39,7 +39,7 @@ body{
 #loader{
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #000;
   position: fixed;
   top: 0;
   left: 0;
@@ -53,12 +53,38 @@ body{
   .loading-icon{
     width: 100px;
     height: 100px;
-    background: red;
+    background-color: rgb(215,38,61);
+    animation: rotating 2s linear infinite;
+
+    margin: 2em 0;
+  }
+  p{
+    color: #fff;
   }
 }
 
 
-//  
+@keyframes rotating{
+  0%{
+    transform: rotate(0deg);
+    background-color: rgb(215, 38, 61);
+  }
+
+  30%{
+    background-color: rgb(255, 164, 0);
+  }
+
+  60%{
+    background-color: rgb(255, 255, 255);
+  }
+
+  100%{
+    background-color: rgb(215, 38, 61);
+    transform: rotate(360deg);
+  }
+}
+
+
 @keyframes mainArrow{
   
   0%{
