@@ -877,3 +877,24 @@ body{
   }
 }
   
+// preloader  
+.loader{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .loading-icon{
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+}
